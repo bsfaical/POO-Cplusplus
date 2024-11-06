@@ -24,6 +24,6 @@ int main(){
     for(int i=0; i<4; i++){
         cout << bruno.notas_provas.nota[i] << endl;
     }
-    exit(0);
+    // exit(0);
     //return(2);
 }
