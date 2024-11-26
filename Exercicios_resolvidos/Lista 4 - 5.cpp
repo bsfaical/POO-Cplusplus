@@ -4,6 +4,16 @@
 #include <iostream> 
 #include <iomanip> 
 using namespace std;
+
+void teste(float **matriz, int colunas, int linhas){
+    for (int i=0; i<colunas; i++){ // percorre linhas
+        for(int j=0; j<linhas; j++){ // perorrer colunas
+            cout << setw(4) << matriz[i][j];
+        }
+        cout << endl;
+    }
+}
+
 int main() {
     const int LINHAS = 5;
     const int COLUNAS = 4;
@@ -13,7 +23,16 @@ int main() {
                                     {4.1, 4.2, 4.3, 4.4},
                                     {5.1, 5.2, 5.3, 5.4},
                                     };
-    float matriz_t[COLUNAS][LINHAS];
+
+    float **matriz_t = new float *[COLUNAS];
+	
+	
+	for(int i=0; i<COLUNAS; i++){
+		matriz_t[i] = new float[LINHAS];
+	}
+    // float matriz_t[COLUNAS][LINHAS];
+
+
     cout << "Matriz original:" << endl;
     for (int i = 0; i < LINHAS; i++) { // percorre as linhas
         for (int j = 0; j < COLUNAS; j++) { // percorre as colunas
@@ -24,10 +43,12 @@ int main() {
     }
     cout << endl << endl;
     cout << "Matriz transposta:" << endl;
-    for (int i=0; i<COLUNAS; i++){ // percorre linhas
-        for(int j=0; j<LINHAS; j++){ // perorrer colunas
-            cout << setw(4) << matriz_t[i][j];
-        }
-        cout << endl;
-    }
+    // for (int i=0; i<COLUNAS; i++){ // percorre linhas
+    //     for(int j=0; j<LINHAS; j++){ // perorrer colunas
+    //         cout << setw(4) << matriz_t[i][j];
+    //     }
+    //     cout << endl;
+    // }
+    // cout << endl << endl;
+    teste(matriz_t, COLUNAS, LINHAS);
 }
