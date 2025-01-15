@@ -15,15 +15,13 @@ class Carro: public Veiculo{
 
     public:
         // Construtores 
-        Carro(){
+        Carro():Veiculo(){
             marca = "";
             modelo = "";
-            Veiculo();
         };
-        Carro(string fabricante, string modelo, string cor, int ano){
+        Carro(string fabricante, string modelo, string cor, int ano):Veiculo(cor, ano){
             marca = fabricante;
             this->modelo = modelo;
-            Veiculo(cor, ano);
         };
 
         // Getters
