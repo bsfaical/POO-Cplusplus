@@ -3,7 +3,7 @@ using namespace std;
 
 class Veiculo{
     public:
-    void exibe(){
+    virtual void exibe(){
         cout << "Objeto de Veiculo" << endl;
     }
 

@@ -4,7 +4,7 @@ using namespace std;
 
 class Veiculo{
     public:
-    virtual void exibe(){
+    void exibe(){
         cout << "Objeto de Veiculo" << endl;
     }
 
