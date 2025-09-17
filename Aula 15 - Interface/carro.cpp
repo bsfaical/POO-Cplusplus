@@ -3,9 +3,9 @@
 
 using namespace std;
 
-Carro::Carro(){
-    cor_predominante = "Verde";
-    ano_fabricacao = 1908;
+Carro::Carro(string cor, int ano){
+    cor_predominante = cor;
+    ano_fabricacao = ano;
 }
 
 string Carro::get_cor(){
