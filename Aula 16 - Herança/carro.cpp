@@ -1,5 +1,5 @@
 #include <string>
-#include "veiculo.hpp"
+#include "veiculo.cpp"
 using namespace std;
 
 class Carro: public Veiculo{

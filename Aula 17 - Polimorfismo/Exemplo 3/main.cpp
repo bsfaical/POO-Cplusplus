@@ -1,5 +1,5 @@
 #include <iostream>
-#include "carro.hpp"
+#include "carro.cpp"
 
 using namespace std;
 
@@ -9,5 +9,5 @@ int main(){
 
     v1->exibe();
     v2->exibe();
-    //v2->exibe2(); // ERRO: classe "Veiculo" não possui membro "exibe2"
+    // v2->exibe2(); // ERRO: classe "Veiculo" não possui membro "exibe2"
 }

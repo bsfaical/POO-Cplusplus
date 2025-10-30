@@ -14,7 +14,7 @@ class Veiculo{
         // Construtores 
         Veiculo(){
             cor_predominante = "";
-            ano_fabricacao = 1908;
+            ano_fabricacao = 0;
         };
         Veiculo(string cor, int ano){
             cor_predominante = cor;
