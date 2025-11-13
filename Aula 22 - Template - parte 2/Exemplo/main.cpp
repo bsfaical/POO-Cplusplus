@@ -14,7 +14,6 @@ int main()
 
     Array<int> array_generico(arr, 5);
 
-    // Os valores sofram substituidos por 0 
     delete[] arr;
 
     array_generico.print();
