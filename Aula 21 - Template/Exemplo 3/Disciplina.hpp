@@ -14,7 +14,7 @@ class Disciplina {
         Disciplina (long CD, string No) : Codigo_(CD), Nome_(No) { }
 
         friend ostream &operator << (ostream &S, const Disciplina &D){ 
-            S << "Disciplina: " << D.Codigo_ << '\t' << D.Nome_ << endl; 
+            S << "Disciplina: " << D.Codigo_ << '\t' << D.Nome_; 
             return S; 
         }
 };

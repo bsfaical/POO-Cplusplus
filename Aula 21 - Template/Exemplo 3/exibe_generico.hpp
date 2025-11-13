@@ -10,6 +10,6 @@ void Exibe (const T& Col, string Opc = "") {
     typename T::const_iterator Pos; 
     if(Opc.length()) cout << endl << Opc << endl; 
     for (Pos = Col.begin(); Pos != Col.end(); ++Pos) 
-        cout << **Pos; 
+        cout << **Pos << endl; 
         
 }

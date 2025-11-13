@@ -9,5 +9,5 @@ void ExibeV (const vector<Disciplina*>& Col, string Opc = "") {
     vector<Disciplina*>::const_iterator PosV; 
     if(Opc.length()) cout << endl << Opc << endl;
     for(PosV = Col.begin(); PosV != Col.end(); ++PosV)
-        cout << **PosV; 
+        cout << **PosV << endl; 
 }
